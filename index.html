@@ -1,0 +1,461 @@
+
+# Create the complete HTML website for Maggie Roofing Contractors
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggie Roofing Contractors – Roofing Services in Scranton | 5-Star Rated</title>
+    <meta name="description" content="Maggie Roofing Contractors offers trusted roof repair, replacement, installation, and emergency services in Scranton, PA. 5-star rated local roofing experts. Call +1 272-228-7172 for a free quote.">
+    <meta name="keywords" content="roofing Scranton PA, roof repair Scranton, roof replacement, commercial roofing, emergency roofing, gutter services, storm damage repair">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="maggie.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-home"></i>
+                Maggie Roofing
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:+12722287172" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                    <i class="fas fa-phone"></i> Call Now
+                </a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>5.0 Google Rating</span>
+            </div>
+            <h1>Maggie Roofing Contractors</h1>
+            <p class="hero-tagline">Trusted Roofing Services in Scranton</p>
+            <div class="hero-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Serving Scranton, PA and Surrounding Areas</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="tel:+12722287172" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> Call Today
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-clipboard-list"></i> Get a Free Quote
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5.0</span>
+                    <span class="stat-label">Star Rating</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Emergency Service</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Services -->
+    <section class="quick-services">
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Roof Repair</h3>
+                <p>Fast, reliable repairs for leaks, damage, and wear. We fix it right the first time.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Roof Replacement</h3>
+                <p>Complete roof replacement with premium materials and expert installation.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h3>Roof Inspection</h3>
+                <p>Thorough inspections to identify issues before they become costly problems.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                </div>
+                <h3>Storm Damage</h3>
+                <p>Emergency repairs and restoration after severe weather events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Professional roofing team at work">
+                    <div class="experience-badge">
+                        <span class="years">5.0</span>
+                        <span class="text">Star Rating<br>Google Reviews</span>
+                    </div>
+                </div>
+                <div class="about-text fade-in">
+                    <h2>Your Local Roofing Experts</h2>
+                    <p>Maggie Roofing Contractors is Scranton's trusted name in roofing services. Located at 527 Maple St, we've built our reputation on quality craftsmanship, honest pricing, and exceptional customer service.</p>
+                    <p>We understand that your roof is one of the most critical components of your home or business. That's why we use only the highest quality materials and employ skilled professionals who take pride in their work.</p>
+                    <p>From minor repairs to complete replacements, we treat every project with the same level of dedication and attention to detail. Our commitment to excellence has earned us a perfect 5-star rating from our valued customers.</p>
+                    
+                    <div class="rating-box">
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-text">
+                            5.0 Out of 5 Stars
+                            <span>Based on 3 Google Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Detail Section -->
+    <section class="services-detail" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Services</h2>
+                <p>Comprehensive roofing solutions for residential and commercial properties in Scranton and Northeastern Pennsylvania</p>
+            </div>
+            
+            <div class="service-detail-grid">
+                <!-- Roof Repair -->
+                <div class="service-detail-item fade-in">
+                    <div class="service-detail-image" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80');"></div>
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-hammer"></i> Roof Repair</h3>
+                        <p>Don't let a small leak become a big problem. Our expert technicians quickly diagnose and repair all types of roof damage, from missing shingles to structural issues.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Leak detection and repair</li>
+                            <li><i class="fas fa-check"></i> Shingle replacement</li>
+                            <li><i class="fas fa-check"></i> Flashing repair</li>
+                            <li><i class="fas fa-check"></i> Emergency patch services</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            Schedule Repair
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Roof Replacement -->
+                <div class="service-detail-item fade-in">
+                    <div class="service-detail-image" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80');"></div>
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-home"></i> Roof Replacement</h3>
+                        <p>When repairs aren't enough, we provide complete roof replacement services using premium materials that stand up to Pennsylvania's harsh weather conditions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Asphalt shingles</li>
+                            <li><i class="fas fa-check"></i> Metal roofing</li>
+                            <li><i class="fas fa-check"></i> Tile and slate</li>
+                            <li><i class="fas fa-check"></i> Extended warranties</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            Get Estimate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- New Installation -->
+                <div class="service-detail-item fade-in">
+                    <div class="service-detail-image" style="background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80');"></div>
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-hard-hat"></i> New Roof Installation</h3>
+                        <p>Building a new home or addition? We specialize in new construction roofing installations that provide lasting protection and enhance curb appeal.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Custom design consultation</li>
+                            <li><i class="fas fa-check"></i> Energy-efficient options</li>
+                            <li><i class="fas fa-check"></i> Code compliance guaranteed</li>
+                            <li><i class="fas fa-check"></i> Clean job site guarantee</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            Start Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Storm Damage -->
+                <div class="service-detail-item fade-in">
+                    <div class="service-detail-image" style="background-image: url('https://images.unsplash.com/photo-1527482797697-8795b05a13fe?w=800&q=80');"></div>
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-bolt"></i> Storm Damage Repair</h3>
+                        <p>Pennsylvania weather can be tough on roofs. We provide rapid response to storm damage, working directly with your insurance company to streamline repairs.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 24/7 emergency response</li>
+                            <li><i class="fas fa-check"></i> Insurance claim assistance</li>
+                            <li><i class="fas fa-check"></i> Wind and hail damage repair</li>
+                            <li><i class="fas fa-check"></i> Temporary protection</li>
+                        </ul>
+                        <a href="tel:+12722287172" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            Emergency Line
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gutter Services -->
+                <div class="service-detail-item fade-in">
+                    <div class="service-detail-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80');"></div>
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-water"></i> Gutter Services</h3>
+                        <p>Proper drainage is essential for roof health. We install, repair, and maintain gutter systems that protect your foundation and landscaping.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Seamless gutter installation</li>
+                            <li><i class="fas fa-check"></i> Gutter guard systems</li>
+                            <li><i class="fas fa-check"></i> Cleaning and maintenance</li>
+                            <li><i class="fas fa-check"></i> Downspout repair</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Commercial & Emergency -->
+                <div class="service-detail-item fade-in">
+                    <div class="service-detail-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80');"></div>
+                    <div class="service-detail-content">
+                        <h3><i class="fas fa-building"></i> Commercial & Emergency</h3>
+                        <p>From office buildings to warehouses, we provide commercial roofing solutions. Plus, our 24/7 emergency service ensures you're never left exposed.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Flat roof specialists</li>
+                            <li><i class="fas fa-check"></i> TPO and EPDM roofing</li>
+                            <li><i class="fas fa-check"></i> Emergency tarping</li>
+                            <li><i class="fas fa-check"></i> Preventive maintenance</li>
+                        </ul>
+                        <a href="tel:+12722287172" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            24/7 Emergency
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it - hear from homeowners and businesses across Scranton</p>
+            </div>
+            
+            <div class="reviews-slider fade-in">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Maggie Roofing responded quickly when we had a leak during the last storm. Professional, courteous, and the repair was done perfectly. Highly recommend!"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">JD</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">John D.</div>
+                            <div class="reviewer-verified">
+                                <i class="fas fa-check-circle"></i> Verified Google Review
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="google-rating-big fade-in">
+                <i class="fab fa-google google-icon"></i>
+                <div class="rating-info">
+                    <h3>5.0 / 5.0</h3>
+                    <p>Based on 3 Google Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Contact Us</h2>
+                <p>Ready to start your roofing project? Get in touch for a free, no-obligation estimate</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>527 Maple St<br>Scranton, PA 18505</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+12722287172">+1 (272) 228-7172</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 7AM-6PM<br>Sat: 8AM-4PM<br>24/7 Emergency Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2!2d-75.6644!3d41.4084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77483a9f%3A0x5f3f7a5f3f7a5f3f!2s527%20Maple%20St%2C%20Scranton%2C%20PA%2018505!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(272) 228-7172">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="repair">Roof Repair</option>
+                                <option value="replacement">Roof Replacement</option>
+                                <option value="installation">New Installation</option>
+                                <option value="inspection">Roof Inspection</option>
+                                <option value="storm">Storm Damage</option>
+                                <option value="gutter">Gutter Services</option>
+                                <option value="commercial">Commercial Roofing</option>
+                                <option value="emergency">Emergency Service</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Request Free Quote
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Maggie Roofing Contractors</h4>
+                <p>Your trusted local roofing experts in Scranton, PA. Quality craftsmanship, honest pricing, and exceptional service on every project.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p>
+                    <a href="#home">Home</a><br>
+                    <a href="#about">About Us</a><br>
+                    <a href="#services">Services</a><br>
+                    <a href="#reviews">Reviews</a><br>
+                    <a href="#contact">Contact</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p>
+                    <a href="#services">Roof Repair</a><br>
+                    <a href="#services">Roof Replacement</a><br>
+                    <a href="#services">Storm Damage</a><br>
+                    <a href="#services">Commercial Roofing</a><br>
+                    <a href="#services">Emergency Service</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>
+                    527 Maple St<br>
+                    Scranton, PA 18505<br>
+                    <a href="tel:+12722287172">(272) 228-7172</a><br>
+                    <a href="mailto:info@maggieroofing.com">info@maggieroofing.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Maggie Roofing Contractors. All rights reserved. | Licensed & Insured</p>
+        </div>
+    </footer>
+
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>24/7 Emergency Roofing Service Available - Call Now: <a href="tel:+12722287172">(272) 228-7172</a></span>
+    </div>
+
+    <script src="maggie.js"></script>
+</body>
+</html>
